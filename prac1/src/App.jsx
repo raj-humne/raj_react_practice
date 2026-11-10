@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
-
+import products from '/.products'
 function App(){
   var[a,b] = useState(34) 
   return (
     <div className='h-screen w-full bg-zinc-900 text-white'>
-      <h1 className='text-4xl text-white'>Counter</h1>
-      <h1>{a}</h1>
-      <button  onClick = {()=>b(a+1)} className='bg-green-950 text-zinc-500}'>Click to increase the count</button>
+    <products />
     </div>
   )
 }
